@@ -3,7 +3,14 @@ class Human{
 	private String name="Sam";
 	
 	public Human(){
-		System.out.println("In Constructor");
+		//System.out.println("In Constructor");
+		age =11;
+		name="John";
+	}
+	public Human(int age,String name){
+		//System.out.println("In Parameterized Constructor");
+		this.age =age;
+		this.name=name;
 	}
 	
 	public int getAge(){
@@ -23,10 +30,10 @@ class Human{
 public class X{
 	public static void main(String ...args){
 		Human boy=new Human();
-		Human boy1=new Human();
-		boy.setAge(13);
-		boy.setName("Sam");
+		Human boy2=new Human();
+		//boy.setAge(13);
+		//boy.setName("Sam");
 		
-		System.out.println(boy.getName()+":"+boy.getAge());
+		System.out.println(boy2.getName()+":"+boy2.getAge());
 	}
 }

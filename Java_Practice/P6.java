@@ -12,4 +12,4 @@ class P6{
 		new Qwer().show();
 		
 	}
-}
+} 
